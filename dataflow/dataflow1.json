@@ -23,10 +23,10 @@
 			],
 			"transformations": [
 				{
-					"name": "select1"
+					"name": "aggregate1"
 				},
 				{
-					"name": "aggregate1"
+					"name": "derivedColumn1"
 				}
 			],
 			"scriptLines": [
@@ -40,16 +40,8 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
 				"     format: 'parquet') ~> source1",
-				"source1 select(mapColumn(",
-				"          userId,",
-				"          id,",
-				"          title,",
-				"          body",
-				"     ),",
-				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> select1",
-				"select1 aggregate(groupBy(body,",
-				"          id)) ~> aggregate1",
+				"derivedColumn1 aggregate(groupBy(body)) ~> aggregate1",
+				"source1 derive(NewColumn = concat('userId', 'id')) ~> derivedColumn1",
 				"aggregate1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     umask: 0022,",
