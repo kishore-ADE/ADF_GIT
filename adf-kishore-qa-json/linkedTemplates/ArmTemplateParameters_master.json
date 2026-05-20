@@ -1,0 +1,54 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-kishore-qa-json"
+		},
+		"LS_Sink_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_Sink_ADLS_P_accountKey": {
+			"value": ""
+		},
+		"LS_Source_SQl_password": {
+			"value": ""
+		},
+		"Onprem_Source_Sql_password": {
+			"value": ""
+		},
+		"LS_Sink_ADLS_properties_typeProperties_url": {
+			"value": "https://stadlsqa.dfs.core.windows.net/"
+		},
+		"LS_Sink_ADLS_P_properties_typeProperties_url": {
+			"value": "https://stadlsqa.dfs.core.windows.net/"
+		},
+		"LS_Source_Json_properties_typeProperties_url": {
+			"value": "https://jsonplaceholder.typicode.com/"
+		},
+		"LS_Source_SQl_properties_typeProperties_server": {
+			"value": "kingfisher18.database.windows.net"
+		},
+		"LS_Source_SQl_properties_typeProperties_database": {
+			"value": "KishoreAdventure"
+		},
+		"LS_Source_SQl_properties_typeProperties_userName": {
+			"value": "Virat"
+		},
+		"Onprem_Source_Sql_properties_typeProperties_server": {
+			"value": "LP-PG05FBSD"
+		},
+		"Onprem_Source_Sql_properties_typeProperties_database": {
+			"value": "adventure"
+		},
+		"Onprem_Source_Sql_properties_typeProperties_userName": {
+			"value": "Virat"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
