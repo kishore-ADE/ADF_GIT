@@ -1,0 +1,23 @@
+{
+	"name": "DS_DATAFLOW_OP",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Sink_ADLS_P",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "dataflow.csv",
+				"fileSystem": "json-output"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

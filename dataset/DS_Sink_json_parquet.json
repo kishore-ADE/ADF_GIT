@@ -15,7 +15,24 @@
 			},
 			"compressionCodec": "snappy"
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "userId",
+				"type": "INT64"
+			},
+			{
+				"name": "id",
+				"type": "INT64"
+			},
+			{
+				"name": "title",
+				"type": "UTF8"
+			},
+			{
+				"name": "body",
+				"type": "UTF8"
+			}
+		]
 	},
 	"type": "Microsoft.DataFactory/factories/datasets"
 }

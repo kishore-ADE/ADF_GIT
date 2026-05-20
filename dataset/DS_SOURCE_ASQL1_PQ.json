@@ -1,0 +1,16 @@
+{
+	"name": "DS_SOURCE_ASQL1_PQ",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Source_SQl",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "SalesLT",
+			"table": "SalesOrderDetail"
+		}
+	}
+}
