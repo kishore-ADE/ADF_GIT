@@ -1,0 +1,15 @@
+{
+	"name": "adf-kishore-qa-json",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a72b97ae-7cab-491b-a9ac-b6fa9b010b39",
+		"tenantId": "d84efa6b-0754-4ac9-8b15-4d967eb50f75"
+	}
+}

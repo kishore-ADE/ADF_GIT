@@ -1,0 +1,21 @@
+{
+	"name": "DS_Sink_json_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Sink_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "post.parquet",
+				"fileSystem": "json-output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
