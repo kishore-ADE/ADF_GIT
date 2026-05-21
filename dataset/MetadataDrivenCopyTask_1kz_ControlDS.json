@@ -1,0 +1,19 @@
+{
+	"name": "MetadataDrivenCopyTask_1kz_ControlDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Source_SQl",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MetadataDrivenCopyTask_1kz_20260521"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "MainControlTable"
+		}
+	}
+}
